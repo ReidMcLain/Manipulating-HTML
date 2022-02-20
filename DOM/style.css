@@ -1,0 +1,14 @@
+.div2-class {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 50px;
+    width: 100px;
+}
+
+.div4-class {
+   display: flex;
+   flex-direction: column;
+}
