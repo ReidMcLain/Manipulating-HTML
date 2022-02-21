@@ -1,0 +1,14 @@
+#divID {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 50px;
+    width: 100px;
+}
+
+#reidList {
+    display: flex;
+    flex-direction: column;
+ }

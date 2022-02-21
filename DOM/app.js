@@ -41,7 +41,7 @@ const HR3 = document.createElement("hr");
 document.body.appendChild(HR3);
 
 const Div3 = document.createElement("p");
-Div3.textContent = "Can you paint with all the colors of the Wind?"
+Div3.textContent = "Can you paint with all the colors of the wind?"
 document.body.appendChild(Div3)
 
 Div3.addEventListener('click', function () {
