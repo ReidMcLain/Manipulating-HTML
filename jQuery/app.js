@@ -5,10 +5,10 @@ $(document).ready(function () {
     });
 
     $("#BtnText").click(function () {
-        let test = $('#inputId'); 
+        let test = $('#inputId');
         alert(test.val());
     });
-    
+
     $("#divID").mouseover(function () {
         $('#divID').css('background-color', 'blue');
     });
@@ -35,12 +35,24 @@ $(document).ready(function () {
         $('#reidList').append(item);
     });
 
-    const friends = ["William", "John", "Landon", "Chad", "Noah", "Sage", "Austin", "Emily", "Cameron", "Jordan"];
+    let friendList = $('#friendList')
+
+    const friends = ["William", "John", "Landon", "Chad", "Noah", "Sage", "Austin", "Emily", "Cameron", "Jordan"]
 
     let friendCounter = 0;
 
+    let item2 = $('<ul></ul>');
+
+    $('body').append(item2);
+
     $("#friendsBtn").click(function () {
-        let item = '<li>friends</li>';
-        $('#friendsList').append(item);
+        if (friendCounter < friends.length) {
+            let item = $('<li>' + friends[friendCounter] + '</li>')
+            item2.append(item);
+            friendCounter++;
+        }
+        else {
+            alert('out of friends');
+        }
     });
 });
