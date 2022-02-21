@@ -1,3 +1,5 @@
+window.onload = () => {
+
 const Btn = document.createElement("button");
 Btn.textContent = "Nice Message";
 document.body.appendChild(Btn);
@@ -104,3 +106,4 @@ Btn4.addEventListener('click', function () {
         alert('out of friends');
     }
 });
+}
